@@ -1,6 +1,7 @@
 # ProjectJetDroid
 
-**2D survivle & Platformer (University project).
+> 2D survivle & Platformer (University project).
+
 Surviving the dark caves on distant planet. Droid must survive his way throught the cave and planet itself.
 
 ###### Mechanics
