@@ -2,20 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectables : MonoBehaviour
+public class Collectables : PlayerInteractable
 {
     public AudioClip pickupsound;
 
-    private void OnTriggerEnter2D(Collider2D target)
+    protected override void Interact(Player player)
     {
-        if(target.gameObject.tag == "Player")
+        if (pickupsound != null)
         {
-            if (pickupsound)
-            {
-                AudioSource.PlayClipAtPoint(pickupsound, transform.position);
-            }
-
-            Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(pickupsound, transform.position);
         }
     }
 }
