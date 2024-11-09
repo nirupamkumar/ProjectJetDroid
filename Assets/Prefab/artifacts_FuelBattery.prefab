@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2208018961680349297
+--- !u!1 &1232706046963348862
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2208018961680349309}
-  - component: {fileID: 2208018961680349308}
-  - component: {fileID: 1626034341227746680}
-  - component: {fileID: 2208018961680349311}
+  - component: {fileID: 1977923295518355586}
+  - component: {fileID: 3790460049774504637}
+  - component: {fileID: -3890795848075846524}
+  - component: {fileID: 4306659128810950290}
+  - component: {fileID: 5565730628389193950}
   m_Layer: 0
-  m_Name: artifacts_Shard
+  m_Name: artifacts_FuelBattery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2208018961680349309
+--- !u!4 &1977923295518355586
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208018961680349297}
+  m_GameObject: {fileID: 1232706046963348862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -34,13 +35,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2208018961680349308
+--- !u!212 &3790460049774504637
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208018961680349297}
+  m_GameObject: {fileID: 1232706046963348862}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 29362b9358172b641bae399ce7e56e8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91f4407a68c696648b59b4aa46da13af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,13 +87,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1626034341227746680
+--- !u!61 &-3890795848075846524
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208018961680349297}
+  m_GameObject: {fileID: 1232706046963348862}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -131,16 +132,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &2208018961680349311
+--- !u!114 &4306659128810950290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208018961680349297}
+  m_GameObject: {fileID: 1232706046963348862}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a590bfdafe8f11469c5e497f7231eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupsound: {fileID: 0}
+--- !u!114 &5565730628389193950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232706046963348862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3409285d572b54c84bfc3b39fc1f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
