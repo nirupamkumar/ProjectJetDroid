@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,12 +11,21 @@ public class ClickToContinue : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown (0) && !loadLock) LoadScene();
+        if (Input.GetMouseButtonDown (0) && !loadLock)
+        {
+            loadLock = true;
+            SceneTransitionDelay();
+        }
+    }
+
+    private async void SceneTransitionDelay()
+    {
+        await Task.Delay(600);
+        LoadScene();
     }
 
     void LoadScene()
     {
-        loadLock = true;
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("1_StoryIntro");
     }
 }
