@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ClickToContinue : MonoBehaviour
 {
-    public string scene;
     private bool loadLock;
 
     void Update()
