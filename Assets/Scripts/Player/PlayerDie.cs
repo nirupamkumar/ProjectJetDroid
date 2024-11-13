@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDie : MonoBehaviour
 {
+    public string sceneName;
+    // Triggers Try Again text
+    // Load the same scene once player clicks anywhere in the scene
+
     void OnTriggerEnter2D(Collider2D target)
     {
         if(target.gameObject.tag == "Deadly")
         {
             OnExplode();
-            SceneManager.LoadScene("Level2", LoadSceneMode.Single);
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
     }
 
