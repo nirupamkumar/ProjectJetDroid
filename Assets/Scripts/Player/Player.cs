@@ -5,18 +5,25 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 150f;
-    public Vector2 maxVelocity = new Vector2(60, 200);
-    public float jetSpeed = 200f;
     public bool standing;
-    public float standingThreshold = 4f;
-    public float airSpeedMultiplier = .3f;
     public AudioClip leftFootSound;
     public AudioClip rightFootSound;
+
+    public Vector2 maxVelocity = new Vector2(60, 200);
+    public float jetSpeed = 200f;
+    public float standingThreshold = 4f;
+    public float airSpeedMultiplier = .3f;
+    public bool canUseJetpack = false;
 
     private PlayerController controller;
     private Rigidbody2D body2D;
     private SpriteRenderer renderer2D;
     private Animator animator;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
